@@ -14,7 +14,7 @@ app = FastAPI(lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=['*'],
+    allow_origins=['https://calculater-fe.vercel.app/'],
     allow_credentials=True,
     allow_methods=["GET", "POST"],
     allow_headers=["*"],
