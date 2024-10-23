@@ -12,13 +12,13 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 
 origins = [
-    "https://calculater-fe.vercel.app",
-]
+    "https://calculater-fe.vercel.app"
+],
 
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=['*'],
+    allow_origins=['https://calculater-fe.vercel.app'],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
