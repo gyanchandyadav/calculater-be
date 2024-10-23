@@ -12,7 +12,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 
 origins = [
-    "https://calculater-csxeahxjh-actions-projects-af7fa38b.vercel.app",
+    "https://calculater-fe.vercel.app",
 ]
 
 
